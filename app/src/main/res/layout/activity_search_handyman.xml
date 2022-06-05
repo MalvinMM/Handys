@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="scrollView"
+    tools:context=".SearchHandyman">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="23dp"
+            android:contentDescription="@string/handymanbox"
+            android:src="@drawable/consult_ic_handyman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rp. 43.000,-"
+            android:textColor="#A13333"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar8" />
+
+        <RatingBar
+            android:id="@+id/ratingBar8"
+            android:layout_width="148dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="Rating"
+            android:progressTint="#B3541E"
+            android:rating="3.25"
+            app:layout_constraintStart_toEndOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Plumbing Specialist"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <Button
+            android:id="@+id/chatRecommended7"
+            android:layout_width="91dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Chat Now"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Handyman 4"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="23dp"
+            android:contentDescription="@string/handymanbox"
+            android:src="@drawable/consult_ic_handyman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Handyman 3"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/imageView20"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="AC Specialist"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <RatingBar
+            android:id="@+id/ratingBar7"
+            android:layout_width="148dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="Rating"
+            android:progressTint="#B3541E"
+            android:rating="1.25"
+            app:layout_constraintStart_toEndOf="@+id/imageView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rp. 25.000,-"
+            android:textColor="#A13333"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView20"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar7" />
+
+        <Button
+            android:id="@+id/chatRecommended6"
+            android:layout_width="91dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Chat Now"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/ic_line_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chatRecommended5" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_line_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chatRecommended6" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="23dp"
+            android:contentDescription="@string/handymanbox"
+            android:src="@drawable/consult_ic_handyman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Rooftop Specialist"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <RatingBar
+            android:id="@+id/ratingBar6"
+            android:layout_width="148dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="Rating"
+            android:progressTint="#B3541E"
+            android:rating="3"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rp. 35.000,-"
+            android:textColor="#A13333"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar6" />
+
+        <Button
+            android:id="@+id/chatRecommended5"
+            android:layout_width="91dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Chat Now"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Handyman 2"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_line_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chatRecommended3" />
+
+        <Button
+            android:id="@+id/chatRecommended3"
+            android:layout_width="91dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Chat Now"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rp. 50.000,-"
+            android:textColor="#A13333"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar4" />
+
+        <RatingBar
+            android:id="@+id/ratingBar4"
+            android:layout_width="148dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="Rating"
+            android:progressTint="#B3541E"
+            android:rating="4"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="General Handyman"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Handyman 1"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/filter2" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/handymanbox"
+            android:src="@drawable/consult_ic_handyman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filter1" />
+
+        <TextView
+            android:id="@+id/FilterString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Filter"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/outlined_text_input_layout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="333dp"
+            android:layout_height="42dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="68dp"
+            android:hint="@string/search_handyman"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/consult_ic_search_icon"
+                android:fontFamily="@font/poppins_medium"
+                android:textColorHint="#757575"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter1"
+            android:layout_width="47dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/poppins"
+            android:text="Price"
+            android:textAlignment="center"
+            android:textColor="#B3541E"
+            android:textSize="10sp"
+            app:chipStrokeColor="#040303"
+            app:chipStrokeWidth="0.1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FilterString"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter2"
+            android:layout_width="53dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/poppins"
+            android:text="Rating"
+            android:textAlignment="center"
+            android:textColor="#B3541E"
+            android:textSize="10sp"
+            app:chipStrokeColor="#040303"
+            app:chipStrokeWidth="0.1dp"
+            app:layout_constraintStart_toEndOf="@+id/filter1"
+            app:layout_constraintTop_toBottomOf="@+id/FilterString"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/landing_home_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".shop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/locationIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/navigator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/material_store"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="333dp"
+            android:layout_height="42dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="68dp"
+            android:hint="Search Store, Material or related.."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationIcon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/consult_ic_search_icon"
+                android:fontFamily="@font/poppins_medium"
+                android:textColorHint="#757575"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="Private Drive No. 4, Little Whinging"
+            android:textColor="#A13333"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/locationIcon"
+            app:layout_constraintTop_toBottomOf="@+id/navigator" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/location_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navigator"
+            app:srcCompat="@drawable/landing_ic_map" />
+
+
+        <ImageView
+            android:id="@+id/promo"
+            android:layout_width="408dp"
+            android:layout_height="198dp"
+            android:contentDescription="@string/promo_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/outlined_text_input_layout"
+            app:srcCompat="@drawable/ic_frame_168"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Products"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/promo" />
+
+        <ImageView
+            android:id="@+id/bedroomIcon7"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_frame_203"
+            app:layout_constraintStart_toEndOf="@+id/bedroomIcon6"
+            app:layout_constraintTop_toBottomOf="@+id/products" />
+
+        <ImageView
+            android:id="@+id/bedroomIcon"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_frame_203"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/products" />
+
+        <ImageView
+            android:id="@+id/bedroomIcon5"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_frame_203"
+            app:layout_constraintStart_toEndOf="@+id/bedroomIcon"
+            app:layout_constraintTop_toBottomOf="@+id/products"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/bedroomIcon6"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_frame_203"
+            app:layout_constraintStart_toEndOf="@+id/bedroomIcon5"
+            app:layout_constraintTop_toBottomOf="@+id/products" />
+
+        <ImageView
+            android:id="@+id/buildingIcon9"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_frame_204_1"
+            app:layout_constraintStart_toEndOf="@+id/buildingIcon8"
+            app:layout_constraintTop_toBottomOf="@+id/bedroomIcon7" />
+
+        <ImageView
+            android:id="@+id/buildingIcon8"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_frame_204_1"
+            app:layout_constraintStart_toEndOf="@+id/buildingIcon7"
+            app:layout_constraintTop_toBottomOf="@+id/bedroomIcon6" />
+
+        <ImageView
+            android:id="@+id/buildingIcon7"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_frame_204_1"
+            app:layout_constraintStart_toEndOf="@+id/buildingIcon"
+            app:layout_constraintTop_toBottomOf="@+id/bedroomIcon5" />
+
+        <TextView
+            android:id="@+id/see_more3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/see_more"
+            android:textColor="#99000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/bedroomIcon7"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/see_more4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/see_more"
+            android:textColor="#99000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/promo3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/buildingIcon"
+            android:layout_width="81dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_frame_204_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bedroomIcon" />
+
+        <TextView
+            android:id="@+id/promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Promo"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buildingIcon" />
+
+        <ImageView
+            android:id="@+id/promo1"
+            android:layout_width="166dp"
+            android:layout_height="219dp"
+            android:layout_marginStart="32dp"
+            android:contentDescription="promo1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/promotion"
+            app:srcCompat="@drawable/ic_group_77" />
+
+        <ImageView
+            android:id="@+id/promo3"
+            android:layout_width="166dp"
+            android:layout_height="219dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="promo2"
+            app:layout_constraintStart_toEndOf="@+id/promo1"
+            app:layout_constraintTop_toBottomOf="@+id/promotion"
+            app:srcCompat="@drawable/ic_group_77" />
+
+        <TextView
+            android:id="@+id/popular_searches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Popular Search"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/promo1" />
+
+        <ImageView
+            android:id="@+id/popular_searches_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:contentDescription="content1_popular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches"
+            app:srcCompat="@drawable/landing_ic_popular_searches" />
+
+        <ImageView
+            android:id="@+id/popular_searches_content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:contentDescription="content2_popular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches_content1"
+            app:srcCompat="@drawable/landing_ic_popular_searches" />
+
+        <ImageView
+            android:id="@+id/popular_searches_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="content3_popular"
+            app:layout_constraintStart_toEndOf="@+id/popular_searches_content1"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches"
+            app:srcCompat="@drawable/landing_ic_popular_searches" />
+
+        <ImageView
+            android:id="@+id/popular_searches_content4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="content4_popular"
+            app:layout_constraintStart_toEndOf="@+id/popular_searches_content3"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches_content2"
+            app:srcCompat="@drawable/landing_ic_popular_searches" />
+
+        <TextView
+            android:id="@+id/see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/see_more"
+            android:textColor="#99000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/popular_searches_content2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/recommended_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Recommended Store"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches_content3" />
+
+        <TextView
+            android:id="@+id/see_more_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="46dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/see_more"
+            android:textColor="#99000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/input_box"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/input_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:contentDescription="input_box"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recommended_store"
+            app:srcCompat="@drawable/ic_input_box__1_" />
+
+        <ImageView
+            android:id="@+id/kosong"
+            android:layout_width="345dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/white"
+            android:contentDescription="kosong"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_box"
+            app:srcCompat="@drawable/ic_spacer_" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

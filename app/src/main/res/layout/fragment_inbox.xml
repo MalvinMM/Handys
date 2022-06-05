@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/landing_inbox_footer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.InboxFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/chatPerson1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="155dp"
+            android:src="@drawable/landing_ic_profile_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameChat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="155dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Handyman 1"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/chatPerson1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chatSpecialist1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="General Handyman"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/chatPerson1"
+            app:layout_constraintTop_toBottomOf="@+id/nameChat1" />
+
+        <TextView
+            android:id="@+id/textMessage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="This is a dummy text message . . ."
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/chatPerson1"
+            app:layout_constraintTop_toBottomOf="@+id/chatSpecialist1" />
+
+        <TextView
+            android:id="@+id/timeChat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="19.40"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/chatUnread1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/chat_unread"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeChat1" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMessage1" />
+
+        <TextView
+            android:id="@+id/nameChat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Handyman 2"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/chatPerson2"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/chatSpecialist2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rooftop Specialist"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/chatPerson2"
+            app:layout_constraintTop_toBottomOf="@+id/nameChat2" />
+
+        <TextView
+            android:id="@+id/textMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="This is a dummy text message . . ."
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/chatPerson2"
+            app:layout_constraintTop_toBottomOf="@+id/chatSpecialist2" />
+
+        <TextView
+            android:id="@+id/timeChat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="12.15"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <ImageView
+            android:id="@+id/chatPerson2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/landing_ic_profile_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="414dp"
+        android:layout_height="125dp"
+        android:foregroundGravity="fill_horizontal|fill"
+        android:paddingTop="50dp"
+        android:splitMotionEvents="false"
+        app:itemTextColor="@color/color_navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/inbox">
+
+        <TextView
+            android:id="@+id/inboxTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Inbox"
+            android:textColor="#000000"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/opening_landing"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:contentDescription="@string/location_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+            app:srcCompat="@drawable/landing_ic_map" />
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/your_location"
+            android:textColor="#A13333"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/locationIcon"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+        <ImageView
+            android:id="@+id/profilePict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/profilepict"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/landing_ic_profile_circle" />
+
+        <ImageView
+            android:id="@+id/promo"
+            android:layout_width="408dp"
+            android:layout_height="198dp"
+            android:contentDescription="@string/promo_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePict"
+            app:srcCompat="@drawable/ic_frame_168"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/features"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/promo" />
+
+        <ImageView
+            android:id="@+id/consult_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/consult_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/features"
+            app:srcCompat="@drawable/landing_ic_consult" />
+
+        <ImageView
+            android:id="@+id/appointment_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/appointment_icon"
+            app:layout_constraintStart_toEndOf="@+id/consult_icon"
+            app:layout_constraintTop_toBottomOf="@+id/features"
+            app:srcCompat="@drawable/landing_ic_appointment" />
+
+        <ImageView
+            android:id="@+id/shop_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/shop_icon"
+            app:layout_constraintStart_toEndOf="@+id/appointment_icon"
+            app:layout_constraintTop_toBottomOf="@+id/features"
+            app:srcCompat="@drawable/landing_ic_shop" />
+
+        <TextView
+            android:id="@+id/popular_searches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Popular Searches"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/consult_icon" />
+
+        <ImageView
+            android:id="@+id/popular_searches_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:contentDescription="content1_popular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches"
+            app:srcCompat="@drawable/landing_ic_popular_searches" />
+
+        <ImageView
+            android:id="@+id/popular_searches_content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:contentDescription="content2_popular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches_content1"
+            app:srcCompat="@drawable/landing_ic_popular_searches" />
+
+        <ImageView
+            android:id="@+id/popular_searches_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="content3_popular"
+            app:layout_constraintStart_toEndOf="@+id/popular_searches_content1"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches"
+            app:srcCompat="@drawable/landing_ic_popular_searches" />
+
+        <ImageView
+            android:id="@+id/popular_searches_content4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="content4_popular"
+            app:layout_constraintStart_toEndOf="@+id/popular_searches_content3"
+            app:layout_constraintTop_toBottomOf="@+id/popular_searches_content2"
+            app:srcCompat="@drawable/landing_ic_popular_searches" />
+
+        <TextView
+            android:id="@+id/see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/poppins"
+            android:text="See More"
+            android:textColor="#99000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/popular_searches_content2"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/roundstyle"
+        android:elevation="@dimen/cardview_default_elevation"
+        app:itemBackground="@drawable/roundstyle"
+        app:itemIconSize="32dp"
+        app:itemIconTint="@color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/footer">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

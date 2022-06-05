@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/landing_home_footer"
+        android:icon="@drawable/landing_ic_home"
+        android:title="@string/home_footer" />
+    <item
+        android:id="@+id/landing_activity_footer"
+        android:icon="@drawable/landing_ic_feeds"
+        android:title="@string/activity_footer" />
+    <item
+        android:id="@+id/landing_inbox_footer"
+        android:icon="@drawable/landing_ic_notif"
+        android:title="@string/inbox_footer" />
+    <item
+        android:id="@+id/landing_settings_footer"
+        android:icon="@drawable/landing_ic_settings"
+        android:title="@string/settings_footer" />
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appointment">
+
+    <ImageView
+        android:id="@+id/electronicIcon10"
+        android:layout_width="75dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/consult_ic_electronic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electronicIcon" />
+
+    <TextView
+        android:id="@+id/see_more5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/see_more"
+        android:textColor="#99000000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/electronicIcon9"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/locationText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="Private Drive No. 4, Little Whinging"
+        android:textColor="#A13333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/locationIcon2"
+        app:layout_constraintTop_toBottomOf="@+id/navigator" />
+
+    <ImageView
+        android:id="@+id/locationIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/location_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigator"
+        app:srcCompat="@drawable/landing_ic_map" />
+
+    <TextView
+        android:id="@+id/navigator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/repair_appointment"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlined_text_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="333dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:hint="@string/search_handyman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationIcon2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/consult_ic_search_icon"
+            android:fontFamily="@font/poppins_medium"
+            android:textColorHint="#757575"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/recommendationHandyman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Your Recent Appointment"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlined_text_input_layout" />
+
+    <ImageView
+        android:id="@+id/handys1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/location_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommendationHandyman"
+        app:srcCompat="@drawable/ic_group_98" />
+
+    <ImageView
+        android:id="@+id/handys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/location_icon"
+        app:layout_constraintStart_toEndOf="@+id/handys1"
+        app:layout_constraintTop_toBottomOf="@+id/recommendationHandyman"
+        app:srcCompat="@drawable/ic_group_98" />
+
+    <TextView
+        android:id="@+id/recommendationConsult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Specialist"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/handys1" />
+
+    <ImageView
+        android:id="@+id/electronicIcon"
+        android:layout_width="75dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/consult_ic_electronic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommendationConsult2" />
+
+    <ImageView
+        android:id="@+id/electronicIcon9"
+        android:layout_width="75dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/consult_ic_electronic"
+        app:layout_constraintStart_toEndOf="@+id/electronicIcon8"
+        app:layout_constraintTop_toBottomOf="@+id/recommendationConsult2" />
+
+    <ImageView
+        android:id="@+id/electronicIcon12"
+        android:layout_width="75dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/consult_ic_electronic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/electronicIcon11"
+        app:layout_constraintTop_toBottomOf="@+id/electronicIcon9" />
+
+    <ImageView
+        android:id="@+id/electronicIcon8"
+        android:layout_width="75dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/consult_ic_electronic"
+        app:layout_constraintStart_toEndOf="@+id/electronicIcon"
+        app:layout_constraintTop_toBottomOf="@+id/recommendationConsult2" />
+
+    <ImageView
+        android:id="@+id/electronicIcon11"
+        android:layout_width="75dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/consult_ic_electronic"
+        app:layout_constraintStart_toEndOf="@+id/electronicIcon10"
+        app:layout_constraintTop_toBottomOf="@+id/electronicIcon8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
